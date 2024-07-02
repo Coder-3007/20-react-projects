@@ -1,0 +1,38 @@
+.heading {
+  font-style: italic;
+  font-size: 70px;
+  margin-top: 20%;
+  margin-bottom: 80px;
+}
+
+.menu-list-container {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.tree-view-container {
+  min-height: 100vh;
+  width: 290px;
+  background: rgb(0, 71, 100);
+}
+.line-below {
+  width: 100%;
+}
+
+.line-below::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  gap: 30%;
+}

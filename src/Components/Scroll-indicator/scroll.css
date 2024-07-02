@@ -1,0 +1,43 @@
+.heading {
+  font-style: italic;
+  font-size: 70px;
+  margin-top: 10%;
+  margin-bottom: 60px;
+}
+.top-container {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(69, 107, 235);
+  color: white;
+}
+.scroll-progress-tracking-container {
+  width: 100%;
+  height: 10px;
+  background: #d4d8ca;
+}
+.current-progress-bar {
+  height: 10px;
+  background: #d499e5;
+  width: 0%;
+}
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.line-below {
+  width: 100%;
+}
+.line-below::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  gap: 30%;
+}

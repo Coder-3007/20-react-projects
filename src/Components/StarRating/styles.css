@@ -1,0 +1,36 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 70px;
+  margin-top: 10%;
+  margin-bottom: 29px;
+}
+
+.starRating {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}
+
+.active {
+  color: gold;
+}
+.inactive {
+  color: black;
+}
+
+.line-below {
+  width: 100%;
+}
+
+.line-below::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  gap: 30%;
+}

@@ -1,0 +1,70 @@
+.heading {
+  font-style: italic;
+  font-size: 70px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.load-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10%;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.button-container1 {
+  background-color: rgb(29, 127, 255);
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button-container1:hover {
+  background-color: rgb(56, 148, 252);
+}
+.letter {
+  display: block; /* Ensure the text is a block element */
+  margin-top: 10px; /* Space between button and text */
+  font-size: 24px; /* Font size of the text */
+  color: #333; /* Color of the text */
+}
+.line-below {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.line-below::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  gap: 30%;
+}

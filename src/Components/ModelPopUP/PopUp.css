@@ -1,0 +1,75 @@
+.heading {
+  font-style: italic;
+  font-size: 70px;
+  margin-top: 10%;
+  margin-bottom: 60px;
+}
+.main {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column;
+}
+.PopUp {
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(100, 189, 224);
+}
+.content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid red;
+  width: 80%;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+.close-popup-icon {
+  cursor: pointer;
+  font-size: 40px;
+  float: right;
+  font-weight: bold;
+}
+.header {
+  padding: 4px 16px;
+  background-color: rgb(121, 121, 219);
+  color: white;
+}
+.body {
+  padding: 2px 16px;
+  height: 200px;
+}
+.footer {
+  padding: 2px 16px;
+  background-color: rgb(171, 236, 236);
+  color: white;
+}
+.line-below {
+  width: 100%;
+}
+.line-below::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  gap: 30%;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
